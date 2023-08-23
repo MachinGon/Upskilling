@@ -1,8 +1,8 @@
 package org.example.DTO;
 
-public class Person {
-    final private String name;
-    final private Job myJob;
+public final class Person {
+    private final String name;
+    private Job myJob;
 
     public Person(String name, Job myJob) {
         this.name = name;
@@ -17,4 +17,7 @@ public class Person {
         return myJob;
     }
 
+    public void setMyJob(Job myJob) {
+        this.myJob = myJob;
+    }
 }
