@@ -1,9 +1,7 @@
-package org.example;
+package org.example.DTO;
 
-import org.example.Job;
-
-public class Person {
-    private String name;
+public final class Person {
+    private final String name;
     private Job myJob;
 
     public Person(String name, Job myJob) {
@@ -17,10 +15,6 @@ public class Person {
 
     public Job getMyJob() {
         return myJob;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public void setMyJob(Job myJob) {
