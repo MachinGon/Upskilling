@@ -1,6 +1,4 @@
-package org.example;
-
-import org.example.Job;
+package org.example.DTO;
 
 public class Person {
     private String name;
