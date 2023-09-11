@@ -1,6 +1,6 @@
 package org.example.DTO;
 
-public class SpecificJob implements Job{
+public final class SpecificJob implements Job{
 
     String jobName;
 
