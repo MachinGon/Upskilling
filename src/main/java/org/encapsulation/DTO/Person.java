@@ -1,4 +1,4 @@
-package org.example.DTO;
+package org.encapsulation.DTO;
 
 public final class Person {
     private final String name;

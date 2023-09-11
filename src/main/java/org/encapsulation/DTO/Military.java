@@ -1,4 +1,4 @@
-package org.example.DTO;
+package org.encapsulation.DTO;
 
 public final class Military extends Army{
     String name;

@@ -1,9 +1,9 @@
-package org.example;
+package org.encapsulation;
 
-import org.example.DTO.Military;
-import org.example.DTO.MilitaryRank;
-import org.example.DTO.Person;
-import org.example.DTO.SpecificJob;
+import org.encapsulation.DTO.Military;
+import org.encapsulation.DTO.MilitaryRank;
+import org.encapsulation.DTO.Person;
+import org.encapsulation.DTO.SpecificJob;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.

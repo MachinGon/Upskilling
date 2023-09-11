@@ -1,4 +1,4 @@
-package org.example.DTO;
+package org.encapsulation.DTO;
 
 public enum MilitaryRank {
         Cadet,
