@@ -5,6 +5,8 @@ import java.util.stream.Collectors;
 import java.util.Map.Entry;
 
 public class Main2 {
+    //14/Sep nextTask: functional interface
+
     public static void main(String[] args){
         String loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut " +
                 "labore et dolore magna aliqua";
@@ -19,13 +21,17 @@ public class Main2 {
         System.out.println("char menos repetido: "+sortedMap.entrySet().stream().findFirst().get().getKey());
 
         HashMap<String,Long> reverseSortedMap = sortMaxToMinMap(map);
-        System.out.println("char mas repetido: "+reverseSortedMap.entrySet().stream().findFirst().get().getKey());
+        System.out.println("char mas repetido: "+reverseSortedMap.entrySet().stream().findFirst().get().getKey()+"\n");
 
 
         TreeMap<String,Long> tree;
         tree = Arrays.stream(loremIpsum.split(""))
                 .collect(Collectors.groupingBy(String::toLowerCase, TreeMap::new, Collectors.counting()));
         System.out.println("Alphabetical order Treemap: "+tree);
+        System.out.println(" valor max stream:"+tree.values().stream().max(Long::compareTo).get());
+        System.out.println(" valor max Entry:_"+tree.entrySet().stream().max(Entry.comparingByValue()).get().getKey()+"_");
+
+
         tree = new TreeMap<>(new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
