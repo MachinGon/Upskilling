@@ -6,6 +6,11 @@ public final class Military extends Army{
         this.myRank = rank;
     }
 
+    @Override
+    public void myPrinter(String msj){
+        System.out.println("custom Military printed "+ msj);
+    }
+
     public void printJob(){
         System.out.println("Im a militar, my rank is: " + this.myRank);
     }

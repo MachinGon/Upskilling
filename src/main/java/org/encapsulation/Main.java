@@ -13,6 +13,8 @@ public class Main {
         Person myPerson2 = new Person("Juan", new SpecificJob("Doctor"));
         Person myPerson3 = new Person("Enrique", new Military(MilitaryRank.Marshall));
 
+
+
         //agregar con abstract class
         //militar, que habra varios (cabo, sargento, general,...)
         //clase militar agregue rango
@@ -21,5 +23,9 @@ public class Main {
         myPerson1.getMyJob().printJob();
         myPerson2.getMyJob().printJob();
         myPerson3.getMyJob().printJob();
+
+        //usando metodo default
+        myPerson3.getMyJob().myPrinter("mensaje del Marshall");
+        myPerson2.getMyJob().myPrinter("el msj del Doc");
     }
 }
