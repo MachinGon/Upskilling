@@ -1,4 +1,4 @@
-package functionalInterface;
+package org.functionalInterface;
 
 @FunctionalInterface
 public interface NumberToSquare {
